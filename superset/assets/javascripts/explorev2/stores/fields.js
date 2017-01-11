@@ -41,7 +41,14 @@ export const fields = {
     label: 'Datasource',
     clearable: false,
     default: null,
+<<<<<<< HEAD
     choices: [],
+=======
+    editUrl: '/tablemodelview/edit',
+    mapStateToProps: (state) => ({
+      choices: state.datasources || [],
+    }),
+>>>>>>> 5d94d70... [explore-v2] add edit link below datasource select (#1919)
     description: '',
   },
 
